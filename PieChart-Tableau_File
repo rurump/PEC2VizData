@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook original-version='18.1' source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Fortune_1000' inline='true' name='federated.0dbdkf903rptpn185arhu1aysub8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Fortune_1000' name='textscan.0zeyley0y2mt6h1bg9dp81sp4wwt'>
+            <connection class='textscan' directory='G:/Mi unidad/UOC/Data Science/4/Visualización de datos/PEC 3 - Estudio de Técnicas de Visualización de Datos' filename='Fortune_1000.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0zeyley0y2mt6h1bg9dp81sp4wwt' name='Fortune_1000.csv' table='[Fortune_1000#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='integer' name='rank' ordinal='1' />
+            <column datatype='string' name='rank_change' ordinal='2' />
+            <column datatype='string' name='revenue' ordinal='3' />
+            <column datatype='string' name='profit' ordinal='4' />
+            <column datatype='integer' name='num. of employees' ordinal='5' />
+            <column datatype='string' name='sector' ordinal='6' />
+            <column datatype='string' name='city' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='string' name='newcomer' ordinal='9' />
+            <column datatype='string' name='ceo_founder' ordinal='10' />
+            <column datatype='string' name='ceo_woman' ordinal='11' />
+            <column datatype='string' name='profitable' ordinal='12' />
+            <column datatype='string' name='prev_rank' ordinal='13' />
+            <column datatype='string' name='CEO' ordinal='14' />
+            <column datatype='string' name='Website' ordinal='15' />
+            <column datatype='string' name='Ticker' ordinal='16' />
+            <column datatype='string' name='Market Cap' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0zeyley0y2mt6h1bg9dp81sp4wwt' name='Fortune_1000.csv' table='[Fortune_1000#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='integer' name='rank' ordinal='1' />
+            <column datatype='string' name='rank_change' ordinal='2' />
+            <column datatype='string' name='revenue' ordinal='3' />
+            <column datatype='string' name='profit' ordinal='4' />
+            <column datatype='integer' name='num. of employees' ordinal='5' />
+            <column datatype='string' name='sector' ordinal='6' />
+            <column datatype='string' name='city' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='string' name='newcomer' ordinal='9' />
+            <column datatype='string' name='ceo_founder' ordinal='10' />
+            <column datatype='string' name='ceo_woman' ordinal='11' />
+            <column datatype='string' name='profitable' ordinal='12' />
+            <column datatype='string' name='prev_rank' ordinal='13' />
+            <column datatype='string' name='CEO' ordinal='14' />
+            <column datatype='string' name='Website' ordinal='15' />
+            <column datatype='string' name='Ticker' ordinal='16' />
+            <column datatype='string' name='Market Cap' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_change</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_change]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>rank_change</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num. of employees</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num. of employees]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>num. of employees</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newcomer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[newcomer]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>newcomer</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceo_founder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ceo_founder]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>ceo_founder</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceo_woman</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ceo_woman]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>ceo_woman</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profitable</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[profitable]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>profitable</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_rank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prev_rank]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>prev_rank</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CEO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CEO]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>CEO</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Website</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Website]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>Website</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>Ticker</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market Cap</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market Cap]</local-name>
+            <parent-name>[Fortune_1000.csv]</parent-name>
+            <remote-alias>Market Cap</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gender' datatype='string' name='[Calculation_426716103320735745]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IIF([ceo_woman]=&quot;yes&quot;, &quot;Mujeres&quot;, &quot;Hombres&quot;)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Fortune_1000.csv' datatype='table' name='[__tableau_internal_object_id__].[Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0]' role='measure' type='quantitative' />
+      <column datatype='string' name='[ceo_woman]' role='dimension' type='nominal' />
+      <column datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Calculation_426716103320735745]' derivation='None' name='[none:Calculation_426716103320735745:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ceo_woman]' derivation='None' name='[none:ceo_woman:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ceo_woman:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_426716103320735745:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Mujeres&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Men&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Hombres&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Women&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='company' />
+        <field-sort-custom-order field='rank' />
+        <field-sort-custom-order field='rank_change' />
+        <field-sort-custom-order field='revenue' />
+        <field-sort-custom-order field='profit' />
+        <field-sort-custom-order field='num. of employees' />
+        <field-sort-custom-order field='sector' />
+        <field-sort-custom-order field='city' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='newcomer' />
+        <field-sort-custom-order field='ceo_founder' />
+        <field-sort-custom-order field='ceo_woman' />
+        <field-sort-custom-order field='Calculation_426716103320735745' />
+        <field-sort-custom-order field='profitable' />
+        <field-sort-custom-order field='prev_rank' />
+        <field-sort-custom-order field='CEO' />
+        <field-sort-custom-order field='Website' />
+        <field-sort-custom-order field='Ticker' />
+        <field-sort-custom-order field='Market Cap' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Fortune_1000.csv' id='Fortune_1000.csv_BF46BBE0CE524014A6C1C5699B9195E0'>
+            <properties context=''>
+              <relation connection='textscan.0zeyley0y2mt6h1bg9dp81sp4wwt' name='Fortune_1000.csv' table='[Fortune_1000#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator=','>
+                  <column datatype='string' name='company' ordinal='0' />
+                  <column datatype='integer' name='rank' ordinal='1' />
+                  <column datatype='string' name='rank_change' ordinal='2' />
+                  <column datatype='string' name='revenue' ordinal='3' />
+                  <column datatype='string' name='profit' ordinal='4' />
+                  <column datatype='integer' name='num. of employees' ordinal='5' />
+                  <column datatype='string' name='sector' ordinal='6' />
+                  <column datatype='string' name='city' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='string' name='newcomer' ordinal='9' />
+                  <column datatype='string' name='ceo_founder' ordinal='10' />
+                  <column datatype='string' name='ceo_woman' ordinal='11' />
+                  <column datatype='string' name='profitable' ordinal='12' />
+                  <column datatype='string' name='prev_rank' ordinal='13' />
+                  <column datatype='string' name='CEO' ordinal='14' />
+                  <column datatype='string' name='Website' ordinal='15' />
+                  <column datatype='string' name='Ticker' ordinal='16' />
+                  <column datatype='string' name='Market Cap' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tahoma' fontsize='20'>¿Existe </run>
+            <run bold='true' fontname='Tahoma' fontsize='20'>igualdad de género</run>
+            <run fontname='Tahoma' fontsize='20'> entre los CEOs de las empresas más importantes de US?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fortune_1000' name='federated.0dbdkf903rptpn185arhu1aysub8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dbdkf903rptpn185arhu1aysub8'>
+            <column caption='Gender' datatype='string' name='[Calculation_426716103320735745]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IIF([ceo_woman]=&quot;yes&quot;, &quot;Mujeres&quot;, &quot;Hombres&quot;)' />
+            </column>
+            <column datatype='string' name='[ceo_woman]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_426716103320735745]' derivation='Count' name='[cnt:Calculation_426716103320735745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_426716103320735745]' derivation='None' name='[none:Calculation_426716103320735745:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='160' />
+            <format attr='cell-h' value='160' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-align' value='auto' />
+            <format attr='text-align' data-class='subtotal' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' value='Verdana' />
+            <format attr='font-size' field='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' value='12' />
+            <format attr='font-weight' field='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' value='bold' />
+            <format attr='font-family' field='[federated.0dbdkf903rptpn185arhu1aysub8].[cnt:Calculation_426716103320735745:qk]' value='Verdana' />
+            <format attr='font-size' field='[federated.0dbdkf903rptpn185arhu1aysub8].[cnt:Calculation_426716103320735745:qk]' value='22' />
+            <format attr='font-weight' field='[federated.0dbdkf903rptpn185arhu1aysub8].[cnt:Calculation_426716103320735745:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-family' value='Verdana' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Verdana' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' value='Sexo'>
+              <formatted-text>
+                <run>Sexo</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' />
+              <wedge-size column='[federated.0dbdkf903rptpn185arhu1aysub8].[cnt:Calculation_426716103320735745:qk]' />
+              <text column='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2BBA7A0E-9F25-4984-BD9D-DBFC03D55861}' />
+    </worksheet>
+  </worksheets>
+  <windows show-side-pane='false' source-height='2'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='194'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='165'>
+            <card pane-specification-id='0' param='[federated.0dbdkf903rptpn185arhu1aysub8].[none:Calculation_426716103320735745:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0dbdkf903rptpn185arhu1aysub8].[attr:ceo_woman:nk]</field>
+            <field>[federated.0dbdkf903rptpn185arhu1aysub8].[cnt:ceo_woman:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D002DF69-2F32-4E6B-9178-D9D3313B750F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
